@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, inital-scale=1"/>
+    <title>Nancy Chac Portfolio</title>
+    <!--font links go here-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+      <div id="navbar">
+        <a class="active" href="javascript:void(0)">Nancy chac</a>
+        <a class="btn" target="_blank" href="#">Resume PDF</a>
+        <a href="javascript:void(0)">About</a>
+      </div>
+      
+      <div class="content">       
+        <section>
+    <header><h1> Hello and Welcome! </h1></header>
+    <main>
+    <p>I'm Nancy, an aspiring UX/UI designer. I'm from Boston, MA. I hope to innovate users' experiences in the digital space with style. I'm always looking to learn and improve. Check out my UX/UI projects below!</p>
+    </main>
+    </section>
+      </div>
+      <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>    
+
+</body>
+</html>
