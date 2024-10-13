@@ -1,0 +1,627 @@
+/* ---- GLOABL STYLES ---- */
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  body {
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    background: #ffffff;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  p,
+  li {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* ---- MENU ---- */
+  
+  li,
+  a,
+  button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    border-bottom: 1px solid;
+    background-color: #ffffff;
+  }
+  
+  .logo {
+    width: 7%;
+    margin-right: auto;
+  }
+  
+  .nav_links {
+    list-style: none;
+  }
+  
+  .nav_links li {
+    display: inline-block;
+    padding: 0 /*top*/ 20px /*left & right*/;
+  }
+  
+  .nav_links li a {
+    transition: all 0.3s ease 0s;
+  }
+  
+  .nav_links li a:hover {
+    color: #5b44ba;
+    text-decoration: wavy underline;
+  }
+  
+  button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  
+  button:hover {
+    background-color: #5b44ba;
+    color: white;
+  }
+
+  /* MOBILE MENU */
+#hamburger-icon div{
+  width: 35px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+.open .bar2 {
+  opacity: 0;
+}
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.mobile-menu {
+  background: rgba(255,255,255, 0.9);
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li a{
+  line-height: 100px;
+  font-size: 35px;
+}
+.mobile-menu li a:hover {
+  color: #5b44ba;
+  text-decoration: wavy underline;
+}
+
+  /*--- PORJECT PAGES ---*/
+
+.project-intro {
+    display: block;
+    padding: 50px 150px;
+    border-bottom: 1px solid black;
+    background-size: cover;
+  
+    p {
+      font-weight: 600;
+      font-size: 20px;
+      display: flex;
+      padding-bottom: 35px;
+      align-items: center;
+    }
+    background-color: rgb(253, 255, 234);
+  }
+
+  .skill-icon {
+    width: 2%;
+    padding-right: 15px;
+  }
+  
+  .project-title h1{
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+  
+  
+  .project-details ul {
+    border-left: #000000 4px solid;
+    border-spacing: 10px;
+    margin-bottom: 50px;
+  
+  }
+  
+  .project-details li {
+    line-height: 35px;
+    font-size: 20px;
+    align-items: left;
+  }
+  
+  .background {
+    padding: 50px 150px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    h2 {
+      font-size: 40px;
+      text-decoration: wavy underline 2px;
+      text-underline-offset: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  
+  .process {
+    padding: 50px 150px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #fdffea;
+    border-top: #000000 1px solid;
+  h2{
+      font-size: 40px;
+      text-decoration: wavy underline 2px;
+      text-underline-offset: 20px;
+      padding-bottom: 20px;
+  }
+}
+  
+  ol {
+    list-style-position: inside;
+    p{
+    padding-bottom: 30px;
+    font-size: 20px;
+    margin-right: 45px;
+    }
+  }
+  
+  ol li{
+    font-size: 25px;
+    padding: 25px;
+    margin-right: 45px;
+  }
+  
+  .process img {
+    width: 60%;
+    border: #000000 1px solid;
+  }
+  
+  .wireframe {
+    display: block; /*inline-block;*/
+    /* justify-content: space-evenly;*/
+    padding: 20px 90px 90px 90px;
+    background-color: #fdffea;
+    border-bottom: #000000 1px solid;
+    text-align: center;
+  }
+  
+  .wireframe h2 {
+    text-align: center;
+    font-size: 40px;
+    text-decoration: wavy underline 2px;
+    text-underline-offset: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .wireframe img {
+    width: 60%;
+    margin: auto;
+    border: #000000 1px solid; 
+  }
+  
+  .wireframe-details ul{
+    padding: 20px;
+    line-height: 30px;
+    text-align: left;
+  }
+  
+  .wireframe-details li {
+    padding-bottom: 35px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .outcome {
+    padding: 50px 150px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 18px;
+    border-top: #000000 1px solid;
+    h2 {
+      font-size: 40px;
+      text-decoration: wavy underline 2px;
+      text-underline-offset: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  
+  .reflection {
+    padding: 50px 150px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    h2 {
+      font-size: 40px;
+      text-decoration: wavy underline 2px;
+      text-underline-offset: 20px;
+      padding-bottom: 20px;
+    }
+    p {
+      padding: 20px;
+    }
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  
+  /*--- LINK TO PREVIOUS PROJECT ----*/
+  .next-navigation-only {
+    text-align: right;
+    padding: 50px;
+  }
+  
+  /*---- GRAPHIC DESIGN PROJECT PAGES ----- */
+  .gd-project-intro {
+    display: block;
+    padding: 50px 150px;
+    border-bottom: 1px solid black;
+    background-size: cover;
+    p {
+      font-weight: 500;
+      font-size: 20px;
+      display: flex;
+      padding-bottom: 35px;
+      align-items: center;
+    }
+
+    background-color: rgb(230, 252, 237);
+  }
+  
+  .project-title {
+    font-size: 50px;
+  }
+  
+  .project-details ul {
+    border-left: #000000 4px solid;
+    border-spacing: 10px;
+  }
+  
+  .project-details li {
+    font-weight: 400;
+    line-height: 35px;
+    font-size: 20px;
+    align-items: left;
+  }
+  
+  .planning-design {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 50px 150px;
+    line-height: 35px;
+    p {
+      line-height: 35px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+  
+  .planning-design h2 {
+    font-size: 40px;
+    text-decoration: wavy underline 2px;
+    text-underline-offset: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .planning-design img {
+    margin: 50px;
+    border: #000000 1px solid;
+  }
+  
+  /*--- ERP SUMMIT  ---*/
+  .erp-merchandise {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    padding: 50px 150px;
+  }
+  
+  .erp-sticker img{
+    border: 1px #000000 solid;
+  }
+  
+  .erp-pen img{
+    border: 1px #000000 solid;
+  }
+  
+  .flyer-images {
+    text-align: center;
+    margin: auto;
+    padding: 50px 150px;
+  }
+  
+  .flyer-images img {
+    padding-bottom: 30px;
+  }
+  
+  /*--- SPARC ----*/ 
+  .sparc-designs {
+    display: inline-block;
+    flex-direction: row;
+    text-align: center;
+    padding: 50px 0px;
+    h2 {
+      font-size: 40px;
+      text-decoration: wavy underline 2px;
+      text-underline-offset: 20px;
+      padding-bottom: 40px;
+    }
+  }
+  
+  .sparc-image {
+    margin: 40px;
+  }
+  
+  .sparc-banner {
+    margin-bottom: 50px;
+  }
+  .sparc-banner h2 {
+    margin-top: 150px;
+  }
+  
+  .dashboard-banner {
+    border: #000000 1px solid;
+  }
+  
+  /*--- GUAN -----*/
+  .freelance-project-intro {
+    display: block;
+    padding: 50px 150px;
+    border-bottom: 1px solid black;
+    background-size: cover;
+  
+    p {
+      font-size: 20px;
+      display: flex;
+      padding-bottom: 35px;
+      align-items: center;
+    }
+    background-color: rgb(230, 231, 252);
+  }
+  
+  .rough-drafts {
+    padding-top: 50px;
+  }
+  
+  /*---- SANDEL ------*/
+  .sandel-logo {
+    display: flex;
+    margin: 50px;
+  }
+  
+  .sandel-logo img {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  
+  /* ---- FOOTER ----- */
+  
+  hr {
+    width: 100%; /* centred margin */
+    height: 1px; /* thickness of the line */
+    background-color: black; /* colour of the line */
+    border: none; /* no border */
+  }
+  
+  footer {
+    background: #ffffff;
+    color: #000000;
+    padding-bottom: 80px;
+  }
+  
+  footer p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 40px;
+  }
+  
+  .socials {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  .socials li {
+    display: inline-block;
+    margin-top: 20px;
+  }
+  .socials img {
+    width: 35px;
+    padding: 8px;
+    transition: all 0.3s ease 0s;
+  }
+  .socials img:hover {
+    opacity: 0.5;
+  }
+  
+  
+  @media screen and (min-width: 751px) and (max-width: 2000px) {
+    #hamburger-icon div{
+      display: none;
+    }
+  }
+  /*--- FOR SMALLER SCREENS ---*/
+@media screen and (max-width: 750px) {
+  header nav {
+    display: none;
+  }
+
+  .project-intro{
+    padding: 30px;
+  }
+  .background {
+    padding: 20px;
+  }
+  .outcome{
+    padding: 20px;
+  }
+  .reflection {
+    padding: 20px;
+  }
+  .body{
+    margin: 0px;
+  }
+
+  .logo {
+    width: 25%;
+    margin-right: auto;
+  }
+  .cta {
+    display: none;
+  }
+  #hamburger-icon div{
+    display: block;
+  }
+
+  .skill-icon {
+    width: 9%
+  }
+
+  /*---- UI/UI---*/
+  .process img {
+    width: 100%;
+  }
+  .wireframe {
+  padding: 30px;
+  }
+  .wireframe img {
+    width: 100%;
+  }
+  /* --- GD ----*/
+  .gd-project-intro{
+    padding: 30px;
+    h1 {
+      font-size: 35px;
+    }
+  }
+  .freelance-project-intro{
+    padding: 30px;
+  }
+  
+  .planning-design {
+    padding: 30px;
+  }
+  .planning-design h2 {
+    text-underline-offset: 10px;
+    line-height: 60px;
+  }
+  .process {
+    padding: 10px;
+  }
+  .image-design {
+    width: 100%;
+  }
+
+  .planning-design img {
+    margin: 0px;
+  }
+
+  .erp-merchandise {
+    display: block;
+  }
+
+  .erp-merchandise img {
+    width: 100%;
+  }
+
+  .flyer-images{
+    padding: 30px;
+  }
+
+  .flyer-images img {
+    width: 100%;
+  }
+
+  .sparc-image {
+    text-align: center;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  .guan-ref {
+    width: 60%;
+  }
+  .guan-image {
+    width: 80%;
+  }
+  .img {
+    width: 70%;
+  }
+  .sandel-logo {
+    display: block;
+    img {
+      width: 100%;
+    }
+  }
+  .navigation {
+    display: block;
+    text-align: center;
+    button {
+      margin-bottom: 25px;
+    }
+  }
+  /*--- LINK TO PREVIOUS PROJECT ----*/
+  .next-navigation-only {
+    text-align: center;
+    padding: 30px;
+  }
+
+  /*---FOOTER-----*/
+  .socials img {
+    width: 50px;
+  }
+}
