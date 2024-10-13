@@ -69,6 +69,8 @@ html {
   .nav_links li a:hover {
     color: #5b44ba;
     text-decoration: wavy underline;
+    -webkit-text-decoration: underline;
+    text-decoration-style: wavy;
   }
   
   button {
@@ -182,6 +184,8 @@ html {
     h2 {
       font-size: 40px;
       text-decoration: wavy underline 2px;
+        -webkit-text-decoration: underline;
+      text-decoration-style: wavy;
       text-underline-offset: 20px;
       padding-bottom: 20px;
     }
@@ -196,6 +200,8 @@ html {
   h2{
       font-size: 40px;
       text-decoration: wavy underline 2px;
+    -webkit-text-decoration: underline;
+      text-decoration-style: wavy;
       text-underline-offset: 20px;
       padding-bottom: 20px;
   }
@@ -234,6 +240,8 @@ html {
     text-align: center;
     font-size: 40px;
     text-decoration: wavy underline 2px;
+    -webkit-text-decoration: underline;
+    text-decoration-style: wavy;
     text-underline-offset: 20px;
     padding-bottom: 20px;
   }
@@ -265,6 +273,8 @@ html {
     h2 {
       font-size: 40px;
       text-decoration: wavy underline 2px;
+    -webkit-text-decoration: underline;
+      text-decoration-style: wavy;
       text-underline-offset: 20px;
       padding-bottom: 20px;
     }
@@ -279,6 +289,8 @@ html {
     h2 {
       font-size: 40px;
       text-decoration: wavy underline 2px;
+        -webkit-text-decoration: underline;
+      text-decoration-style: wavy;
       text-underline-offset: 20px;
       padding-bottom: 20px;
     }
@@ -349,6 +361,8 @@ html {
   .planning-design h2 {
     font-size: 40px;
     text-decoration: wavy underline 2px;
+    -webkit-text-decoration: underline;
+      text-decoration-style: wavy;
     text-underline-offset: 20px;
     padding-bottom: 20px;
   }
@@ -393,6 +407,8 @@ html {
     h2 {
       font-size: 40px;
       text-decoration: wavy underline 2px;
+        -webkit-text-decoration: underline;
+      text-decoration-style: wavy;
       text-underline-offset: 20px;
       padding-bottom: 40px;
     }
