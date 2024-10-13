@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, inital-scale=1"/>
+        <title>Nancy Chac | UITS Knowledge Base</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/project-page.css">
+        <!--- LIGHTBOX -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/css/glightbox.min.css"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/js/glightbox.min.js"></script>
+    </head>
+
+    <body>
+
+<!-- MENU -->
+<header>
+  <img
+    class="logo"
+    src="logo/portfolio-icons_picked-logo-purple.png"
+    alt="Purple logo with Nancy's initials and squiggly underlined. This links back to the homepage."
+  />
+  <nav>
+    <ul class="nav_links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="graphic-design.html">GRAPHIC DESIGN</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+    </ul>
+  </nav>
+  <a class="cta" href="https://docs.google.com/document/d/1BvJqkt8ysiSKpHJHskTurHIkei3My9EUsUjivL2mP0s/edit?usp=sharing" target="_blank"><button>RESUME</button></a>
+  <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+      <ul class="mobile-menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="graphic-design.html">GRAPHIC DESIGN</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="https://docs.google.com/document/d/1BvJqkt8ysiSKpHJHskTurHIkei3My9EUsUjivL2mP0s/edit?usp=sharing">RESUME</a></li>
+      </ul>
+      <script>
+        function toggleMobileMenu(menu) {
+        menu.classList.toggle('open');
+        }
+      </script>
+  </div>
+</header>
+
+    <!-- PAGE INTRO  -->
+    <section class="project-intro">
+      <div class="project-title">
+        <h1>UITS KNOWLEDGE BASE</h1>
+        <p>
+          <img
+            class="skill-icon"
+            src="icons/tool-icon-tags.png"
+            alt="A image icon of a wrench and screwdriver to show what skills were used for each project."
+          />
+          UI Design • Web Content & Development
+        </p>
+      </div>
+        <div class="project-details">
+          <ul class="detail-list">
+            <li>Timeline: March 2024 - July 2024</li>
+            <li>Team: Digital Experience (DX) Team</li>
+            <li>Role: UX/UI Designer</li>
+            <li>Project Type: Professional Work</li>
+            <li>Tools: Salesforce, Lucidchart, Drupal</li>
+          </ul>
+        </div> 
+    </section>
+    <!-- BACKGROUND-->
+    <section class="background">
+      <h2>BACKGROUND</h2>
+        <p>
+          This branched from another project involving updating content of the 
+          University Information Technology Systems (UITS) knowledge base 
+          articles in UMass President’s Office site. 
+          The current knowledge base site only has a search engine for users 
+          to look at specific articles/ sources. My team is looking to refresh 
+          and organize the web page. The final website will be accessible and 
+          updated with relevant content.
+        </p>
+    </section>
+ 
+ <!-- PROCESS -->  
+ <section class="process">
+  <h2>PROJECT PROCESS</h2>
+  <ol type="1">
+    <li>ORIGNAL STATE</li>
+    <p>
+      The webpage includes a search bar and a list of published 
+      knowledge-base articles starting from the most recent. 
+      It is run by Coveo. There are no UI elements used besides the website 
+      header and the top menu options:  Support Home Page, Knowledge Articles, 
+      View Your Cases, Create Case. The UMass President's Office knowledge base site is run by 
+      Salesforce.
+    </p>
+
+    <li>PEER RESEARCH</li>
+    <p>
+    My design references were knowledge base pages from other universities. 
+    The team also provided ideas from other organizations who utilized UI elements 
+    such as icons and containers on their Help and FAQ pages. 
+    From my references, I noted potential elements we can use form the examples to 
+    the page design.
+    </p>
+    <li>CONTENT PLANNING & DESIGN</li>
+    <p>
+      In our initial discussion about the knowledge articles, 
+      we received feedback from knowledge base article content owners about 
+      the webpage layout. They recommended adding in the article creation date,
+       related articles, responsible department/team on the article pages. 
+       For the homepage, the team agreed to have containers of general 
+       categories (i.e., “around the office”, onboarding, specific products) 
+       of articles in the knowledge base. Refer to the wireframe below for 
+       more details of my design process.
+    </p>
+
+    <p>
+      We researched potential widgets and elements used on Salesforce 
+      CRM marketplace that could be used based on my wireframe design. 
+      This is to know what our options are for development. 
+      I also interviewed with the article content owners to note that 
+      articles needs to be updated or added into Salesforce. 
+      There were also questions about updating the article periodically and 
+      sending automated reminders to them. Implementation is still pending 
+      and will be the next step.
+    </p>
+  </ol>
+</section>
+
+ <!-- CONTENT & DESIGN -->
+ <section class="wireframe">
+  <h2>WIREFRAME</h2>   
+  <div class="wireframe-details">
+    <ul>
+      <li>
+        The landing, category, and article pages are navigated from left to 
+        right. The design choices cased based on interviewed user preferences 
+        and research references.
+      </li>
+      <li>
+        On the landing page, I kept the search bar and added a directory of 
+        categories most of the articles might relate to. These are organized 
+        as containers/ cards which users can click on to go to the category 
+        pages. The right sidebar includes containers of the most recent and 
+        popular articles. The third bottom container includes a list of 
+        article tags.
+
+      </li>
+      <li>
+        The category page includes groups of articles retaining to most 
+        frequently asked questions. On top of the section are buttons users 
+        can click to jump to a specific section. The right sidebar includes 
+        a search bar on the right side and the same containers as the landing 
+        page. The difference is it includes a list relating to the specific 
+        category.
+      </li>
+      <li>
+        The article page continues the content. 
+        The details container includes the dates of when it was last 
+        modified and created. It also has a responsible team/department. 
+        I also added a list of related articles and links to sources outside 
+        of the knowledge base.
+      </li>
+    </ul>
+  </div>
+    <img class="wireframe-image glightbox"
+      src="wireframes/UITS-Knowledge-Base-UI-Wireframe.png"
+      alt="Image of a wireframe of the proprosed site design 
+      pages of the updated Knowledge Base website. 
+      It includes the landing page, a article category page 
+      that's linked in the article category boxes from the landing page. 
+      The article category page includes FAQ questions and 
+      related articles of specific topics clicked from the landing page. 
+      The clicking on the related articles lead to the article page."
+    />
+       <!--- LIGHTBOX SCRIPT -->
+   <script>
+    // This line is required to call the lightbox for the page.
+    var lightbox = GLightbox();
+  
+    // Optional code just to see if it worked.
+    lightbox.on('open', (target) => {
+        console.log('lightbox opened');
+    });
+  </script>
+</section>
+
+     <!-- OUTCOME -->
+     <section class="outcome">
+      <h2>OUTCOME</h2>
+      <p>
+        This project is still ongoing and content planning is still underway. 
+        We’re working towards updating the web content on Salesforce.
+      </p>
+    </section>
+
+        <!--REFLECTION-->
+        <section class="reflection">
+          <h2>REFLECTION</h2>
+            <p>
+              This project provided the opportunity to do user interface design as well 
+              as interview users for our knowledge base. So far, I understood that each users have different needs and wants 
+              for products. From my previous project on the CRM & DX Site refresh, 
+              I applied digital design and accessibility practices learnt to this current 
+              project. This includes properly doing wireframes, placement of graphics, 
+              and what would be most useful for users on specific pages.
+            </p>
+
+            <p>
+              Going into Salesforce and updating the content will 
+              be the next step. I expect this to be a learning curve since 
+              this will be my first hands-on experience using Salesforce for 
+              web development. However, this will be an excellent opportunity 
+              to expand my skillset.
+            </p>
+        </section>
+
+    <!-- LINKS TO PREV AND NEXT PAGES -->
+    <section class="navigation">
+      <a href="umpo-site-refresh.html"><button> PREVIOUS PROJECT </button></a>
+    <a href="uits-crm-dx-homepage.html"><button> NEXT PROJECT </button></a>
+  </section>
+<!-- FOOTER -->
+  <hr/>
+  <footer>
+    <ul class="socials">
+      <p>Let's Connect!</p>
+      <li>
+        <a href="https://www.linkedin.com/in/nancy-chac/" target="_blank"
+          ><img
+            src="icons/linkedin-icon.png"
+            alt="Link to Nancy's Linkedin Profile"
+        /></a>
+      </li>
+      <li>
+        <a href="mailto:nancy.chac18@gmail.com" target="_blank"
+          ><img
+            src="icons/email-icon-black.png"
+            alt="Link to email Nancy."
+        /></a>
+      </li>
+    </ul>
+    <p>© 2024 Designed and Developed by Nancy Chac</p>
+  </footer> 
+   </body>
+</html>

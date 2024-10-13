@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, inital-scale=1" />
+    <title>Nancy Chac | Product Catalog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/project-page.css" />
+  </head>
+
+  <body>
+    <!-- MENU -->
+    <header>
+      <img
+        class="logo"
+        src="logo/portfolio-icons_picked-logo-purple.png"
+        alt="Purple logo with Nancy's initials and squiggly underlined. This links back to the homepage."
+      />
+      <nav>
+        <ul class="nav_links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="graphic-design.html">GRAPHIC DESIGN</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="https://docs.google.com/document/d/1BvJqkt8ysiSKpHJHskTurHIkei3My9EUsUjivL2mP0s/edit?usp=sharing" target="_blank"><button>RESUME</button></a>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+          <ul class="mobile-menu">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="graphic-design.html">GRAPHIC DESIGN</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="https://docs.google.com/document/d/1BvJqkt8ysiSKpHJHskTurHIkei3My9EUsUjivL2mP0s/edit?usp=sharing">RESUME</a></li>
+          </ul>
+          <script>
+            function toggleMobileMenu(menu) {
+            menu.classList.toggle('open');
+            }
+          </script>
+      </div>
+    </header>
+    <!-- PROJECT GALLERY & THUMBNAILS -->
+      <section class="project-intro">
+        <div class="project-title">
+        <h1>UITS PRODUCT CATALOG</h1>
+        <p>
+          <img
+            class="skill-icon"
+            src="icons/tool-icon-tags.png"
+            alt="A image icon of a wrench and screwdriver to show what skills were used for each project."
+          />
+          UI Design • Web Content & Development
+        </p> 
+      </div> 
+      <div class="project-details">     
+        <ul class="detail-list">
+          <li>Timeline: March 2024 - July 2024</li>
+          <li>Team: Digital Experience (DX) Team</li>
+          <li>Role: UX Researcher, Web Developer</li>
+          <li>Project Type: Professional Work</li>
+          <li>Tools: Lucidchart, Drupal</li>
+        </ul>
+      </div> 
+    <a href="https://www.umassp.edu/uits/product-catalog" target="_blank"><button>PRODUCT CATALOG SITE</button></a>
+  </section>
+    <!--- BACKGROUND -->
+    <section class="background">
+      <h2>BACKGROUND</h2>
+      <p>
+        The UMass President’s Office University Information Technology Services
+        (UITS) has a product catalog page on the organization's website. This is
+        the hub for employees to find product information that are licensed
+        within UMass. This includes a landing page including cards of the listed
+        products and individual pages. The team modified the webpages to make it
+        accessible and up to date for users.
+      </p>
+    </section>
+
+    <!--- PROJECT PROCESS-->
+    <section class="process">
+      <h2>PROJECT PROCESS</h2>
+      <ol type="1">
+        <li>ORIGNAL STATE</li>
+        <p>
+          The product catalog has not been updated within a few years. It
+          included products that are no longer licensed. There are also a group
+          of new products that need to be added to the catalog. The individual
+          article pages were also outdated and not accessible-friendly such as
+          including broken URL links.
+        </p>
+        <li>CONTENT PLANNING & DESIGN</li>
+        <p>
+          The cards on the landing page were redesigned to be more accessible.
+          The general format of the product pages was also redesigned. From top
+          to bottom, it now includes the description and a log in button to the
+          product, Key Features, Eligibility, a Step-by-Step guide on How to
+          Access the product, Related Knowledge Articles, Resources from the
+          Product site, and Related Products from the catalog. The team added
+          preliminary content and reformatted the product catalog website in the
+          Drupal staging environment. Each member had their own set of pages to
+          update.
+        </p>
+        <li>INTERVIEW & TESTING</li>
+        <p>
+          I interviewed with the Subject Matter Experts (SME) of the products to
+          receive feedback on the new page designs. This retained to their
+          opinions on the new page format and the content describing the
+          product. For the user testing, three colleagues were selected based on
+          their experience with the product catalog. There was tasked based
+          questions instructing the users to find the product, its page, and
+          related knowledge articles. The screen size adjustment (zoom-in) was
+          also included.
+        </p>
+
+        <p>
+          Overall questions were asked about their user experience such as how
+          they felt about the webpage layout, how often they use the product
+          catalog, what did they most like and what needs improvement on the
+          site. Two of the users frequently use the product catalog while one
+          barely uses it. Overall, they were able to complete the task based
+          questions, one important part is the search bar added in the landing
+          page was the most helpful for all. There was also positive responses
+          on the new layout and two users easily adapted to it. They critiqued
+          about specific products from UMass that should be pushed to the
+          product catalog. There were also questions on specific wordings of
+          section titles and labels which confused them.
+        </p>
+
+        <li>IMPLEMENTATION</li>
+        <p>
+          The team applied the feedback from the SME’s and users to the staging
+          page sites. After another round of review, the team added these
+          changes to production.
+        </p>
+      </ol>
+    </section>
+    
+    <!--- OUTCOME -->
+    <section class="outcome">
+      <h2>OUTCOME</h2>
+      <p>
+        The UITS Product Catalog is up to date and accessibility-friendly. The
+        team will continue to update the website when necessary.
+      </p>
+
+      
+    </section>
+
+    <!--REFLECTION-->
+    <section class="reflection">
+      <h2>REFLECTION</h2>
+      <p>
+        This was my first experience of being a user experience researcher. I
+        learned the best practices of user testing such as the procedure to
+        conduct it and what questions to ask. Also further understanding the
+        different needs and wants from Subject Matter Experts and users. This
+        experience made me consider the end-user’s perspective which can be
+        easily overlooked as a developer.
+      </p>
+
+      <p>
+        It was also my first time using Drupal. It provided a good opportunity
+        to familiarize how UMass creates their websites using it. Also going
+        over the process of creating websites in staging then publishing in
+        production. This was my introduction to web development.
+      </p>
+    </section>
+
+    <section class="navigation">
+      <a href="uits-crm-dx-homepage.html"><button> PREVIOUS PROJECT </button></a>
+    </section>
+    <!-- FOOTER -->
+    <hr/>
+    <footer>
+      <ul class="socials">
+        <p>Let's Connect!</p>
+        <li>
+          <a href="https://www.linkedin.com/in/nancy-chac/" target="_blank"
+            ><img
+              src="icons/linkedin-icon.png"
+              alt="Link to Nancy's Linkedin Profile"
+          /></a>
+        </li>
+        <li>
+          <a href="mailto:nancy.chac18@gmail.com" target="_blank"
+            ><img
+              src="icons/email-icon-black.png"
+              alt="Link to email Nancy."
+          /></a>
+        </li>
+      </ul>
+      <p>© 2024 Designed and Developed by Nancy Chac</p>
+    </footer>
+  </body>
+</html>
