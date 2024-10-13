@@ -98,6 +98,8 @@ header {
 .nav_links li a:hover {
   color: #5b44ba;
   text-decoration: wavy underline;
+  -webkit-text-decoration: underline;
+  text-decoration-style: wavy;
 }
 
 button {
@@ -273,6 +275,8 @@ button:hover {
   h1 {
     font-size: 45px;
     text-decoration: 3px wavy underline;
+    -webkit-text-decoration: underline;
+    text-decoration-style: wavy;
     text-underline-offset: 35px;
     padding-bottom: 35px;
   }
@@ -332,6 +336,8 @@ button:hover {
     font-size: 50px;
     padding: 50px;
     text-decoration: 3px wavy underline;
+    -webkit-text-decoration: underline;
+    text-decoration-style: wavy;
     text-underline-offset: 35px;
     margin: 0px;
   }
@@ -513,9 +519,9 @@ footer p {
 
   footer p {
     padding: 35px;
-    font-size: 30px;
+    font-size: 18px;
   }
   .socials img {
-    width: 70px;
+    width: 50px;
   }
 }
