@@ -205,7 +205,8 @@ button:hover {
 .thumbnail img {
   width: 60%;
   vertical-align: middle;
-  transition: all 0.3s ease 0s;  
+  transition: all 0.3s ease 0s;
+  border: black 1px solid;
 }
 
 .thumbnail img:hover {
@@ -213,7 +214,7 @@ button:hover {
   transform: scale(1.1);
   cursor: pointer;  
   overflow: hidden; 
-  outline:#000000 3px solid;
+  border-color: rgba(91, 68, 186, 1);
 }
 
 .thumbnail-description {
