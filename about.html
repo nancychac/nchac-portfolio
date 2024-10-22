@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <!--- LIGHTBOX -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/css/glightbox.min.css"
+      />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/js/glightbox.min.js"></script>
 </head>
 <body>
     <!-- MENU -->
@@ -45,8 +51,19 @@
       <h1> NICE TO MEET YOU </h1>
       </div>
       <section class="about-bio">
-          <img class="profile-pic" src="profile-images/portfolio-site-profile-2-About.png" alt="Nancy smiling white sitting in a chair at the UMass Club in Boston."
+          <img class="profile-pic glightbox" src="profile-images/portfolio-site-profile-2-About.png" 
+          alt="Nancy smiling white sitting in a chair at the UMass Club in Boston."
           >
+             <!--- LIGHTBOX SCRIPT -->
+          <script>
+            // This line is required to call the lightbox for the page.
+            var lightbox = GLightbox();
+          
+            // Optional code just to see if it worked.
+            lightbox.on('open', (target) => {
+                console.log('lightbox opened');
+            });
+          </script>
           <div class="header-content"> 
           <p> 
             Hello! I'm Nancy, a UMass Lowell 2023 graduate transitioning from marketing analytics to a UX/UI designer. 

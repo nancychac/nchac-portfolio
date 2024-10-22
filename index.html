@@ -8,6 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+  <!--- LIGHTBOX -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/css/glightbox.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/js/glightbox.min.js"></script>
 </head>
 <body>
   <header>
@@ -51,7 +57,7 @@
             I'm always looking to learn and experiment. 
         </p>
       </div>      
-        <img class= intro src="profile-images/portfolio-site-profile-1-Homepage.png" 
+        <img class="intro glightbox" src="profile-images/portfolio-site-profile-1-Homepage.png" 
         alt=
         "A picture of Nancy Chac smiling in front of the Manhattan Bridge in New York City. Outside is sunny and clear. 
         There are people looking at the bridge. 
@@ -70,7 +76,7 @@
  <!--- UMPO SITE REFRESH -->
  <section class="project-gallery">
   <div class="thumbnail">
-      <img
+      <img class="glightbox"
         src="umass-logos/umass-icon.png" 
         alt="This is the image of the logo. On top there is a bold letter 'M' in white. 
         In the front of the 'M' is a blue outline of a letter 'U' to represent UMass. 
@@ -102,7 +108,7 @@
 <!-- KNOWLEDGE ARTICLES-->
   <section class="project-gallery">
     <div class="thumbnail">
-        <img
+        <img class="glightbox"
           src="umass-logos/umass-icon.png" 
           alt="This is the image of the logo. On top there is a bold letter 'M' in white. 
           In the front of the 'M' is a blue outline of a letter 'U' to represent UMass. 
@@ -120,7 +126,8 @@
       </div>
         <div class="thumbnail-content">
           <p> 
-            The UMass President’s Office needed to update their Knowledge Base Articles. 
+            The UMass President’s Office needs to update their Knowledge Base Articles on the 
+            University Information Technology Services (UITS) page site. 
             Along with that came the need to provide proper UI design on the page site along with updated content. 
             This is where I further practiced web content development, and UI design. 
           </p>
@@ -133,7 +140,7 @@
 <section class="project-gallery">
     <!-- THUMBNAIL PIC-->
   <div class="thumbnail">
-      <img 
+      <img class="glightbox"
       src="umass-logos/umass-icon.png" 
       alt="This is the image of the logo. On top there is a bold letter 'M' in white. 
       In the front of the 'M' is a blue outline of a letter 'U' to represent UMass. 
@@ -142,7 +149,7 @@
   </div>
   <div class="thumbnail-description">
     <div class= thumbnail-title>
-      <h2>UITS CRM & DX HOMEPAGE</h2>
+      <h2> CRM & DX TEAM WEBSITE </h2>
       <p2> 
         <img class="skill-icon" src="icons/tool-icon-tags.png" alt="A image icon of a wrench and screwdriver to show what skills were used for each project.">
         UX Design • Web Content & Development 
@@ -150,7 +157,8 @@
     </div>
     <div class="thumbnail-content">
       <p> 
-        This was a website refresh project from the CRM & Digital Experience team at the UMass President’s Office. 
+        This was a website refresh project from the 
+        Customer Relationship Management (CRM) & Digital Experience (DX) team at the UMass President’s Office. 
         This was my first UX/UI project where I learned and practiced user testing, design research, 
         wireframing, and web content development.
       </p>
@@ -163,7 +171,8 @@
 <!--UITS PRODUCT CATALOG-->
     <section class="project-gallery">
       <div class="thumbnail">
-          <img src="umass-logos/umass-icon.png" 
+          <img class="glightbox"
+          src="umass-logos/umass-icon.png" 
           alt="This is the image of the logo. On top there is a bold letter 'M' in white. 
           In the front of the 'M' is a blue outline of a letter 'U' to represent UMass. 
           Under the graphic is the UMass name in white bold capital letters. 
@@ -180,7 +189,7 @@
         </div>
         <div class="thumbnail-content">
           <p>
-            The UMass President’s Office University Information Technology Systems 
+            The UMass President’s Office University Information Technology Services
             (UITS) webpage has a section called the “UITS Product Catalog” 
             that consists of the licensed products used in the university. 
             Users can find information and resources of these products. 
@@ -191,7 +200,15 @@
         </div>
       </div>
     </section>
-  
+<!--- LIGHTBOX SCRIPT -->
+  <script>
+  // This line is required to call the lightbox for the page.
+  var lightbox = GLightbox();            
+  // Optional code just to see if it worked.
+  lightbox.on('open', (target) => {
+ console.log('lightbox opened');
+  });
+  </script>
 <!-- FOOTER -->
 <hr>
 <footer>

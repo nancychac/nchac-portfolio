@@ -54,6 +54,10 @@ li {
   font-size: 18px;
 }
 
+img:hover {
+  cursor: pointer;
+}
+
 /* ---- MENU ---- */
 
 li,
@@ -80,6 +84,10 @@ header {
 .logo {
   width: 7%;
   margin-right: auto;
+}
+
+.logo:hover {
+  cursor: default;
 }
 
 .nav_links {
@@ -272,6 +280,9 @@ button:hover {
   width: 6%;
   padding-right: 10px;
 }
+.skill-icon:hover {
+  cursor:default;
+}
 
 /* ------ ABOUT ------ */
 
@@ -341,6 +352,10 @@ button:hover {
   width: 9%;
   padding-right: 10px;
   vertical-align: bottom;
+}
+
+.bio-icon:hover {
+  cursor: default;
 }
 
 /*---GRAPHIC DESIGN----*/

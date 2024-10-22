@@ -2,7 +2,7 @@
 
 html {
     box-sizing: border-box;
-    margin: 0;
+    margin: 0px;
   }
   body {
     margin: 0px;
@@ -53,6 +53,10 @@ html {
     margin-right: auto;
   }
   
+  .logo:hover {
+    cursor: default;
+  }
+
   .nav_links {
     list-style: none;
   }
@@ -88,6 +92,9 @@ html {
     color: white;
   }
 
+  img:hover {
+    cursor: pointer;
+  }
   /* MOBILE MENU */
 #hamburger-icon div{
   width: 35px;
@@ -137,7 +144,7 @@ html {
 
 .project-intro {
     display: block;
-    padding: 50px 150px;
+    padding: 50px 250px;
     border-bottom: 1px solid black;
     background-size: cover;
   
@@ -154,6 +161,10 @@ html {
   .skill-icon {
     width: 3%;
     padding-right: 15px;
+  }
+
+  .skill-icon:hover {
+    cursor: default;
   }
   
   .project-title h1{
@@ -176,7 +187,7 @@ html {
   }
   
   .background {
-    padding: 50px 150px;
+    padding: 50px 250px;
     line-height: 35px;
     text-align: center;
     font-size: 18px;
@@ -192,7 +203,7 @@ html {
   }
   
   .process {
-    padding: 50px 150px;
+    padding: 50px 250px;
     line-height: 35px;
     text-align: center;
     background-color: #fdffea;
@@ -223,14 +234,14 @@ html {
   }
   
   .process img {
-    width: 60%;
+    width: 100%;
     border: #000000 1px solid;
   }
   
   .wireframe {
     display: block; /*inline-block;*/
     /* justify-content: space-evenly;*/
-    padding: 20px 90px 90px 90px;
+    padding: 20px 250px 90px 250px;
     background-color: #fdffea;
     border-bottom: #000000 1px solid;
     text-align: center;
@@ -247,7 +258,7 @@ html {
   }
   
   .wireframe img {
-    width: 60%;
+    width: 85%;
     margin: auto;
     border: #000000 1px solid; 
   }
@@ -265,7 +276,7 @@ html {
   }
   
   .outcome {
-    padding: 50px 150px;
+    padding: 50px 250px;
     line-height: 35px;
     text-align: center;
     font-size: 18px;
@@ -281,7 +292,7 @@ html {
   }
   
   .reflection {
-    padding: 50px 150px;
+    padding: 50px 250px;
     line-height: 35px;
     text-align: center;
     font-size: 18px;
@@ -302,19 +313,19 @@ html {
   .navigation {
     display: flex;
     justify-content: space-between;
-    padding: 50px;
+    padding: 50px 250px 50px 250px;
   }
   
   /*--- LINK TO PREVIOUS PROJECT ----*/
   .next-navigation-only {
     text-align: right;
-    padding: 50px;
+    padding: 50px 250px 50px 50px;
   }
   
   /*---- GRAPHIC DESIGN PROJECT PAGES ----- */
   .gd-project-intro {
     display: block;
-    padding: 50px 150px;
+    padding: 50px 250px;
     border-bottom: 1px solid black;
     background-size: cover;
     p {
@@ -348,7 +359,7 @@ html {
     display: block;
     text-align: center;
     margin: auto;
-    padding: 50px 150px;
+    padding: 50px 250px;
     line-height: 35px;
     p {
       line-height: 35px;
@@ -432,7 +443,7 @@ html {
   /*--- GUAN -----*/
   .freelance-project-intro {
     display: block;
-    padding: 50px 150px;
+    padding: 50px 250px;
     border-bottom: 1px solid black;
     background-size: cover;
   
